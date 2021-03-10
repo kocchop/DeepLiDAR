@@ -26,7 +26,7 @@ def scale_crop(input_size, scale_size=None, normalize=__imagenet_stats):
     ]
     #if scale_size != input_size:
     #t_list = [transforms.Scale((960,540))] + t_list
-
+    print("I'm here at 29")
     return transforms.Compose(t_list)
 
 
@@ -81,6 +81,7 @@ def get_transform(name='imagenet', input_size=None,
     if augment:
             return inception_color_preproccess(input_size, normalize=normalize)
     else:
+            print("I'm here at 84")
             return scale_crop(input_size=input_size,
                               scale_size=scale_size, normalize=normalize)
 
