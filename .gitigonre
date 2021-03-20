@@ -1,0 +1,6 @@
+*logdir
+*.tar
+*dummy_data
+*.pyc
+*.nfs*
+
