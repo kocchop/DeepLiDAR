@@ -2,3 +2,5 @@
 *dummy_data
 *nfs*
 *.pyc
+*logdir
+*test_data
